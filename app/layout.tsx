@@ -1,6 +1,8 @@
+import "./globals.css";
+
 export const metadata = {
-  title: 'Isabel y Miguel',
-  description: 'Nuestra boda',
+  title: "Isabel y Miguel",
+  description: "Nuestra boda",
 };
 
 export default function RootLayout({
