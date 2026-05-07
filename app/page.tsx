@@ -5,10 +5,13 @@ export default function Home() {
       {/* HERO */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
 
+        {/* FOTO DE FONDO */}
         <div className="absolute inset-0 bg-[url('/foto-boda.JPEG')] bg-cover bg-center" />
 
+        {/* OVERLAY */}
         <div className="absolute inset-0 bg-black/40" />
 
+        {/* CONTENIDO */}
         <div className="relative z-10 text-center px-6 text-white">
 
           <p className="uppercase tracking-[0.4em] text-sm text-[#f6f1eb] mb-8">
@@ -60,7 +63,9 @@ export default function Home() {
           </h2>
 
           <p className="text-lg leading-8 text-[#5b6b76]">
-            Sevilla · 12:30h
+            Sevilla
+            <br />
+            12:00 horas
           </p>
         </div>
 
@@ -75,37 +80,57 @@ export default function Home() {
           </h2>
 
           <p className="text-lg leading-8 text-[#5b6b76]">
-            Sanlúcar la Mayor · Cóctel, cena y fiesta
+            Sanlúcar la Mayor
           </p>
         </div>
 
         {/* AUTOBUSES */}
         <div className="bg-white rounded-[30px] shadow-xl p-10 md:col-span-2">
-          <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
+
+          <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-8">
             Autobuses
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
 
-            <div>
+            {/* OLIVARES */}
+            <div className="border border-[#ece7df] rounded-2xl p-6">
               <h3 className="text-2xl font-serif mb-4">
-                Ida
+                Olivares
               </h3>
 
               <p className="text-[#5b6b76] leading-8">
-                Salida desde Sevilla centro
+                Salida desde el recinto ferial de Olivares
                 <br />
-                11:15h
+                10:30 horas
               </p>
             </div>
 
-            <div>
+            {/* SEVILLA */}
+            <div className="border border-[#ece7df] rounded-2xl p-6">
               <h3 className="text-2xl font-serif mb-4">
-                Vuelta
+                Sevilla
               </h3>
 
               <p className="text-[#5b6b76] leading-8">
-                02:00h · 04:30h · 06:30h
+                Salida al término de la ceremonia
+                <br />
+                hacia Hacienda Al-Yamanah
+              </p>
+            </div>
+
+            {/* REGRESO */}
+            <div className="border border-[#ece7df] rounded-2xl p-6">
+              <h3 className="text-2xl font-serif mb-4">
+                Regreso
+              </h3>
+
+              <p className="text-[#5b6b76] leading-8">
+                19:00 horas
+                <br />
+                Regreso a Sevilla y Olivares
+                <br /><br />
+                Nuevas salidas al finalizar la fiesta
               </p>
             </div>
 
