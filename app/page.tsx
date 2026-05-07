@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main className="bg-[#f6f1eb] text-[#243746]">
+    <main className="bg-[#f6f1eb] text-[#243746] animate-fadeIn">
 
       {/* HERO */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
