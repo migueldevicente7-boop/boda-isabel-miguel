@@ -239,11 +239,10 @@ export default function WeddingWebsite() {
 
             <div className="relative group">
               <select className="appearance-none w-full border border-[#D8CEC2] bg-[#FAF8F5]/80 backdrop-blur-sm rounded-full px-6 py-5 outline-none focus:ring-2 focus:ring-[#1F3A44] text-[#425961] shadow-sm hover:shadow-md transition-all duration-300">
-
-              <option>¿Asistirás a la boda?</option>
-              <option>Sí, allí estaré</option>
-              <option>No podré asistir</option>
-            </select>
+                <option>¿Asistirás a la boda?</option>
+                <option>Sí, allí estaré</option>
+                <option>No podré asistir</option>
+              </select>
 
               <div className="pointer-events-none absolute inset-y-0 right-6 flex items-center text-[#7B8A90] group-hover:text-[#1F3A44] transition-colors">
                 <svg
@@ -265,11 +264,10 @@ export default function WeddingWebsite() {
 
             <div className="relative group">
               <select className="appearance-none w-full border border-[#D8CEC2] bg-[#FAF8F5]/80 backdrop-blur-sm rounded-full px-6 py-5 outline-none focus:ring-2 focus:ring-[#1F3A44] text-[#425961] shadow-sm hover:shadow-md transition-all duration-300">
-
-              <option>¿Utilizarás el autobús?</option>
-              <option>Sí</option>
-              <option>No</option>
-            </select>
+                <option>¿Utilizarás el autobús?</option>
+                <option>Sí</option>
+                <option>No</option>
+              </select>
 
               <div className="pointer-events-none absolute inset-y-0 right-6 flex items-center text-[#7B8A90] group-hover:text-[#1F3A44] transition-colors">
                 <svg
