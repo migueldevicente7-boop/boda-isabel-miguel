@@ -18,7 +18,7 @@ export default function Home() {
             Una celebración inolvidable
           </p>
 
-          <h1 className="text-7xl md:text-9xl leading-none font-serif">
+          <h1 className="text-7xl md:text-9xl leading-none">
             Isabel
           </h1>
 
@@ -26,7 +26,7 @@ export default function Home() {
             y
           </p>
 
-          <h1 className="text-7xl md:text-9xl leading-none font-serif">
+          <h1 className="text-7xl md:text-9xl leading-none">
             Miguel
           </h1>
 
@@ -53,12 +53,12 @@ export default function Home() {
       >
 
         {/* CEREMONIA */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10">
+        <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500">
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
             Ceremonia
           </p>
 
-          <h2 className="text-4xl font-serif mb-6">
+          <h2 className="text-4xl mb-6">
             Capilla del Dulce Nombre de Jesús
           </h2>
 
@@ -70,12 +70,12 @@ export default function Home() {
         </div>
 
         {/* CELEBRACIÓN */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10">
+        <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500">
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
             Celebración
           </p>
 
-          <h2 className="text-4xl font-serif mb-6">
+          <h2 className="text-4xl mb-6">
             Hacienda Al-Yamanah
           </h2>
 
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
 
         {/* AUTOBUSES */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10 md:col-span-2">
+        <div className="bg-white rounded-[30px] shadow-xl p-10 md:col-span-2 hover:-translate-y-1 transition duration-500">
 
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-8">
             Autobuses
@@ -95,7 +95,7 @@ export default function Home() {
 
             {/* OLIVARES */}
             <div className="border border-[#ece7df] rounded-2xl p-6">
-              <h3 className="text-2xl font-serif mb-4">
+              <h3 className="text-2xl mb-4">
                 Olivares
               </h3>
 
@@ -108,7 +108,7 @@ export default function Home() {
 
             {/* SEVILLA */}
             <div className="border border-[#ece7df] rounded-2xl p-6">
-              <h3 className="text-2xl font-serif mb-4">
+              <h3 className="text-2xl mb-4">
                 Sevilla
               </h3>
 
@@ -121,7 +121,7 @@ export default function Home() {
 
             {/* REGRESO */}
             <div className="border border-[#ece7df] rounded-2xl p-6">
-              <h3 className="text-2xl font-serif mb-4">
+              <h3 className="text-2xl mb-4">
                 Regreso
               </h3>
 
@@ -148,7 +148,7 @@ export default function Home() {
             Confirmación
           </p>
 
-          <h2 className="text-5xl font-serif mb-12">
+          <h2 className="text-5xl mb-12">
             Nos encantará celebrar este día contigo
           </h2>
 
@@ -189,6 +189,26 @@ export default function Home() {
         </div>
 
       </section>
+
+      <style jsx global>{`
+
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+
+        .animate-fadeIn {
+          animation: fadeIn 1.2s ease;
+        }
+
+      `}</style>
 
     </main>
   );
