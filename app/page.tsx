@@ -353,14 +353,14 @@ export default function Home() {
 
             <input
               type="text"
-              name="Nombre"
+              name="entry.2091871682"
               placeholder="Nombre y apellidos"
               required
               className="w-full p-5 rounded-2xl text-base text-black border border-[#e7dfd6] bg-white/90 focus:outline-none focus:ring-2 focus:ring-[#b89b72] transition"
             />
 
             <select
-              name="Asistencia"
+              name="entry.998284951"
               required
               className="w-full p-5 rounded-2xl text-base text-black border border-[#e7dfd6] bg-white/90 focus:outline-none focus:ring-2 focus:ring-[#b89b72] transition"
             >
@@ -378,7 +378,7 @@ export default function Home() {
             </select>
 
             <select
-              name="Autobus"
+              name="entry.1972361015"
               required
               className="w-full p-5 rounded-2xl text-base text-black border border-[#e7dfd6] bg-white/90 focus:outline-none focus:ring-2 focus:ring-[#b89b72] transition"
             >
@@ -396,7 +396,7 @@ export default function Home() {
             </select>
 
             <textarea
-              name="Mensaje"
+              name="entry.1356331200"
               placeholder="Alergias, intolerancias o mensaje"
               rows={5}
               className="w-full p-5 rounded-2xl text-base text-black border border-[#e7dfd6] bg-white/90 focus:outline-none focus:ring-2 focus:ring-[#b89b72] transition"
