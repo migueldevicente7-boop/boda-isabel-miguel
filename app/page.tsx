@@ -5,13 +5,10 @@ export default function Home() {
       {/* HERO */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
 
-        {/* FOTO DE FONDO */}
         <div className="absolute inset-0 bg-[url('/foto-boda.JPEG')] bg-cover bg-center" />
 
-        {/* OVERLAY */}
         <div className="absolute inset-0 bg-black/40" />
 
-        {/* CONTENIDO */}
         <div className="relative z-10 text-center px-6 text-white">
 
           <p className="uppercase tracking-[0.4em] text-sm text-[#f6f1eb] mb-8">
@@ -46,6 +43,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CUENTA ATRÁS */}
+      <section className="py-24 bg-[#fffdf9] border-y border-[#ece7df] text-center">
+
+        <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-6">
+          Cuenta atrás
+        </p>
+
+        <div className="w-24 h-px bg-[#d6c1a3] mx-auto mb-10" />
+
+        <h2 className="text-6xl mb-8">
+          26 · Septiembre · 2026
+        </h2>
+
+        <p className="text-xl text-[#5b6b76] tracking-[0.15em] uppercase">
+          Cada día queda menos
+        </p>
+
+      </section>
+
       {/* INFO */}
       <section
         id="info"
@@ -54,6 +70,7 @@ export default function Home() {
 
         {/* CEREMONIA */}
         <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500 fade-up fade-delay-1">
+
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
             Ceremonia
           </p>
@@ -67,10 +84,12 @@ export default function Home() {
             <br />
             12:00 horas
           </p>
+
         </div>
 
         {/* CELEBRACIÓN */}
         <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500 fade-up fade-delay-2">
+
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
             Celebración
           </p>
@@ -82,6 +101,7 @@ export default function Home() {
           <p className="text-lg leading-8 text-[#5b6b76]">
             Sanlúcar la Mayor
           </p>
+
         </div>
 
         {/* AUTOBUSES */}
@@ -93,8 +113,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            {/* OLIVARES */}
             <div className="border border-[#ece7df] rounded-2xl p-6">
+
               <h3 className="text-2xl mb-4">
                 Olivares
               </h3>
@@ -104,10 +124,11 @@ export default function Home() {
                 <br />
                 10:30 horas
               </p>
+
             </div>
 
-            {/* SEVILLA */}
             <div className="border border-[#ece7df] rounded-2xl p-6">
+
               <h3 className="text-2xl mb-4">
                 Sevilla
               </h3>
@@ -117,10 +138,11 @@ export default function Home() {
                 <br />
                 hacia Hacienda Al-Yamanah
               </p>
+
             </div>
 
-            {/* REGRESO */}
             <div className="border border-[#ece7df] rounded-2xl p-6">
+
               <h3 className="text-2xl mb-4">
                 Regreso
               </h3>
@@ -132,9 +154,11 @@ export default function Home() {
                 <br /><br />
                 Nuevas salidas al finalizar la fiesta
               </p>
+
             </div>
 
           </div>
+
         </div>
 
       </section>
@@ -153,12 +177,13 @@ export default function Home() {
           </h2>
 
           <form
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-            action="https://formsubmit.co/familiadevicentepena@gmail.com"
+            action="https://formsubmit.co/TUEMAIL@gmail.com"
             method="POST"
             className="grid gap-6 text-left"
           >
+
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
 
             <input
               type="text"
@@ -176,7 +201,10 @@ export default function Home() {
               <option>No podré asistir</option>
             </select>
 
-            <select className="p-4 rounded-xl text-black">
+            <select
+              name="Autobus"
+              className="p-4 rounded-xl text-black"
+            >
               <option>¿Necesitarás autobús?</option>
               <option>Sí</option>
               <option>No</option>
