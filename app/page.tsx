@@ -174,7 +174,7 @@ export default function Home() {
 
         </div>
 
-        <div className="grid md:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 gap-6 md:gap-10">
 
           {/* CEREMONIA */}
           <div className="bg-white rounded-[40px] p-12 shadow-xl">
