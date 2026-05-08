@@ -53,7 +53,7 @@ export default function Home() {
       >
 
         {/* CEREMONIA */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500">
+        <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500 fade-up fade-delay-1">
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
             Ceremonia
           </p>
