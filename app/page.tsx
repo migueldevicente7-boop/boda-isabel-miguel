@@ -49,7 +49,7 @@ export default function Home() {
       {/* INFO */}
       <section
         id="info"
-        className="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-10"
+        className="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-10 fade-up"
       >
 
         {/* CEREMONIA */}
