@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
+
+  const sectionsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   const weddingDate = new Date("2026-09-26T12:00:00");
 
@@ -49,6 +51,27 @@ export default function Home() {
     return () => clearInterval(interval);
 
   }, []);
+  
+  useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    },
+    {
+      threshold: 0.15,
+    }
+  );
+
+  sectionsRef.current.forEach((section) => {
+    if (section) observer.observe(section);
+  });
+
+  return () => observer.disconnect();
+}, []);
 
   return (
 
@@ -107,7 +130,11 @@ export default function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto px-6">
 
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
+          <div
+            ref={(el) => {
+              sectionsRef.current[0] = el;
+            }}
+            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
             <h2 className="text-6xl font-serif">
               {timeLeft.dias}
             </h2>
@@ -117,7 +144,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
+          <div
+            ref={(el) => {
+              sectionsRef.current[1] = el;
+            }}
+            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
             <h2 className="text-6xl font-serif">
               {timeLeft.horas}
             </h2>
@@ -127,7 +158,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
+          <div 
+            ref={(el) => {
+              sectionsRef.current[2] = el;
+            }}
+            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
             <h2 className="text-6xl font-serif">
               {timeLeft.minutos}
             </h2>
@@ -137,7 +172,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
+          <div 
+            ref={(el) => {
+              sectionsRef.current[3] = el;
+            }}
+            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
             <h2 className="text-6xl font-serif">
               {timeLeft.segundos}
             </h2>
@@ -177,7 +216,11 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-6 md:gap-10">
 
           {/* CEREMONIA */}
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl">
+          <div 
+            ref={(el) => {
+              sectionsRef.current[4] = el;
+            }}
+            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl">
 
             <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
               Ceremonia
@@ -214,7 +257,11 @@ export default function Home() {
           </div>
 
           {/* CONVITE */}
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl">
+          <div 
+            ref={(el) => {
+              sectionsRef.current[5] = el;
+            }}
+            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl">
 
             <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
               Celebración
@@ -253,7 +300,11 @@ export default function Home() {
         </div>
 
         {/* AUTOBUSES */}
-        <div className="fade-up mt-16 bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl">
+        <div 
+          ref={(el) => {
+              sectionsRef.current[6] = el;
+            }}
+            className="fade-scroll mt-16 bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl">
 
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
             Transporte
@@ -324,8 +375,11 @@ export default function Home() {
 
         {/* RSVP */}
         <section
+          ref={(el) => {
+              sectionsRef.current[7] = el;
+            }}
           id="rsvp"
-          className="mt-20 bg-[#243746] rounded-[40px] p-12 text-white shadow-2xl"
+          className="fade-scroll mt-20 bg-[#243746] rounded-[40px] p-12 text-white shadow-2xl"
         >
 
           <div className="text-center mb-12">
