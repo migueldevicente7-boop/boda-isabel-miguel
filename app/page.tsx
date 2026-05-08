@@ -107,7 +107,7 @@ export default function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto px-6">
 
-          <div className="bg-white rounded-3xl p-10 shadow-lg">
+          <div className="bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
             <h2 className="text-6xl font-serif">
               {timeLeft.dias}
             </h2>
@@ -117,7 +117,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white rounded-3xl p-10 shadow-lg">
+          <div className="bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
             <h2 className="text-6xl font-serif">
               {timeLeft.horas}
             </h2>
@@ -127,7 +127,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white rounded-3xl p-10 shadow-lg">
+          <div className="bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
             <h2 className="text-6xl font-serif">
               {timeLeft.minutos}
             </h2>
@@ -137,7 +137,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white rounded-3xl p-10 shadow-lg">
+          <div className="bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
             <h2 className="text-6xl font-serif">
               {timeLeft.segundos}
             </h2>
