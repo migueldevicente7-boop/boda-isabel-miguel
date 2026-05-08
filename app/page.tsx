@@ -87,7 +87,7 @@ export default function Home() {
 
           <a
             href="#rsvp"
-            className="inline-block mt-12 px-8 py-4 border border-[#f6f1eb] text-[#f6f1eb] uppercase tracking-[0.2em] text-sm hover:bg-[#f6f1eb] hover:text-[#243746] transition duration-500"
+            className="inline-block mt-12 px-10 py-5 border border-[#f6f1eb] text-[#f6f1eb] uppercase tracking-[0.25em] text-sm rounded-full hover:bg-[#f6f1eb] hover:text-[#243746] transition duration-500 shadow-xl"
           >
             Confirmar asistencia
           </a>
