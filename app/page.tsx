@@ -177,7 +177,7 @@ export default function Home() {
           </h2>
 
           <form
-            action="https://formsubmit.co/TUEMAIL@gmail.com"
+            action="https://formsubmit.co/familiadevicentepena@gmail.com"
             method="POST"
             className="grid gap-6 text-left"
           >
