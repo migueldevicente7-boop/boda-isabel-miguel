@@ -152,15 +152,25 @@ export default function Home() {
             Nos encantará celebrar este día contigo
           </h2>
 
-          <form className="grid gap-6 text-left">
+          <form
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
+            action="https://formsubmit.co/familiadevicentepena@gmail.com"
+            method="POST"
+            className="grid gap-6 text-left"
+          >
 
             <input
               type="text"
+              name="Nombre"
               placeholder="Nombre y apellidos"
               className="p-4 rounded-xl bg-white text-black"
             />
 
-            <select className="p-4 rounded-xl text-black">
+            <select
+              name="Asistencia"
+              className="p-4 rounded-xl text-black"
+            >
               <option>¿Asistirás a la boda?</option>
               <option>Sí asistiré</option>
               <option>No podré asistir</option>
@@ -173,6 +183,7 @@ export default function Home() {
             </select>
 
             <textarea
+              name="Mensaje"
               placeholder="Alergias, intolerancias o mensaje"
               rows={4}
               className="p-4 rounded-xl text-black"
