@@ -356,13 +356,13 @@ export default function Home() {
               name="Nombre"
               placeholder="Nombre y apellidos"
               required
-              className="p-5 rounded-2xl text-black"
+              className="w-full p-5 rounded-2xl text-base text-black border border-[#e7dfd6] bg-white/90 focus:outline-none focus:ring-2 focus:ring-[#b89b72] transition"
             />
 
             <select
               name="Asistencia"
               required
-              className="p-5 rounded-2xl text-black"
+              className="w-full p-5 rounded-2xl text-base text-black border border-[#e7dfd6] bg-white/90 focus:outline-none focus:ring-2 focus:ring-[#b89b72] transition"
             >
               <option value="">
                 ¿Asistirás a la boda?
@@ -380,7 +380,7 @@ export default function Home() {
             <select
               name="Autobus"
               required
-              className="p-5 rounded-2xl text-black"
+              className="w-full p-5 rounded-2xl text-base text-black border border-[#e7dfd6] bg-white/90 focus:outline-none focus:ring-2 focus:ring-[#b89b72] transition"
             >
               <option value="">
                 ¿Necesitarás autobús?
@@ -399,12 +399,12 @@ export default function Home() {
               name="Mensaje"
               placeholder="Alergias, intolerancias o mensaje"
               rows={5}
-              className="p-5 rounded-2xl text-black"
+              className="w-full p-5 rounded-2xl text-base text-black border border-[#e7dfd6] bg-white/90 focus:outline-none focus:ring-2 focus:ring-[#b89b72] transition"
             />
 
             <button
               type="submit"
-              className="bg-[#d6c1a3] text-[#243746] py-5 rounded-2xl uppercase tracking-[0.3em] text-sm hover:scale-[1.02] transition duration-500"
+              className="rounded-full shadow-xl hover:scale-[1.02] transition duration-500"
             >
               Enviar confirmación
             </button>
