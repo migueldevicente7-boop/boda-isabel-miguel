@@ -87,7 +87,7 @@ export default function Home() {
 
           <a
             href="#rsvp"
-            className="inline-block mt-12 px-10 py-5 border border-[#f6f1eb] text-[#f6f1eb] uppercase tracking-[0.25em] text-sm rounded-full hover:bg-[#f6f1eb] hover:text-[#243746] transition duration-500 shadow-xl"
+            className="inline-block mt-12 px-10 py-5 border border-[#f6f1eb] text-[#f6f1eb] uppercase tracking-[0.25em] text-sm rounded-full hover:bg-[#f6f1eb] hover:text-[#243746] transition duration-500 hover:scale-[1.03] active:scale-[0.98] shadow-xl"
           >
             Confirmar asistencia
           </a>
@@ -107,7 +107,7 @@ export default function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto px-6">
 
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
+          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
             <h2 className="text-6xl font-serif">
               {timeLeft.dias}
             </h2>
@@ -117,7 +117,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
+          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
             <h2 className="text-6xl font-serif">
               {timeLeft.horas}
             </h2>
@@ -127,7 +127,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
+          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
             <h2 className="text-6xl font-serif">
               {timeLeft.minutos}
             </h2>
@@ -137,7 +137,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
+          <div className="fade-up bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
             <h2 className="text-6xl font-serif">
               {timeLeft.segundos}
             </h2>
@@ -194,7 +194,7 @@ export default function Home() {
             <a
               href="https://maps.google.com/?q=Capilla+del+Dulce+Nombre+de+Jesús+Sevilla"
               target="_blank"
-              className="inline-block mb-10 px-6 py-3 border border-[#d6c1a3] rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#243746] hover:text-white transition duration-500"
+              className="inline-block mb-10 px-6 py-3 border border-[#d6c1a3] rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#243746] hover:text-white transition duration-500 hover:scale-[1.03] active:scale-[0.98]"
             >
               Cómo llegar
             </a>
@@ -231,7 +231,7 @@ export default function Home() {
             <a
               href="https://maps.google.com/?q=Hacienda+Al-Yamanah+Sanlúcar+la+Mayor"
               target="_blank"
-              className="inline-block mb-10 px-6 py-3 border border-[#d6c1a3] rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#243746] hover:text-white transition duration-500"
+              className="inline-block mb-10 px-6 py-3 border border-[#d6c1a3] rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#243746] hover:text-white transition duration-500 hover:scale-[1.03] active:scale-[0.98]"
             >
               Cómo llegar
             </a>
@@ -404,7 +404,7 @@ export default function Home() {
 
             <button
               type="submit"
-              className="rounded-full shadow-xl hover:scale-[1.02] transition duration-500"
+              className="rounded-full shadow-xl hover:scale-[1.02] transition duration-500 hover:scale-[1.03] active:scale-[0.98]"
             >
               Enviar confirmación
             </button>
