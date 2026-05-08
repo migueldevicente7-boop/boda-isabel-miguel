@@ -1,4 +1,54 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 export default function Home() {
+
+  const weddingDate = new Date("2026-09-26T12:00:00");
+
+  const [timeLeft, setTimeLeft] = useState({
+    dias: 0,
+    horas: 0,
+    minutos: 0,
+    segundos: 0,
+  });
+
+  useEffect(() => {
+
+    const interval = setInterval(() => {
+
+      const now = new Date().getTime();
+      const distance = weddingDate.getTime() - now;
+
+      const dias = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const horas = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+      );
+
+      const minutos = Math.floor(
+        (distance % (1000 * 60 * 60)) /
+        (1000 * 60)
+      );
+
+      const segundos = Math.floor(
+        (distance % (1000 * 60)) /
+        1000
+      );
+
+      setTimeLeft({
+        dias,
+        horas,
+        minutos,
+        segundos,
+      });
+
+    }, 1000);
+
+    return () => clearInterval(interval);
+
+  }, []);
+
   return (
     <main className="bg-[#f6f1eb] text-[#243746] animate-fadeIn">
 
@@ -43,7 +93,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CUENTA ATRÁS */}
+      {/* CONTADOR */}
       <section className="py-24 bg-[#fffdf9] border-y border-[#ece7df] text-center">
 
         <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-6">
@@ -52,197 +102,51 @@ export default function Home() {
 
         <div className="w-24 h-px bg-[#d6c1a3] mx-auto mb-10" />
 
-        <h2 className="text-6xl mb-8">
-          26 · Septiembre · 2026
-        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
 
-        <p className="text-xl text-[#5b6b76] tracking-[0.15em] uppercase">
-          Cada día queda menos
-        </p>
+          <div className="bg-white rounded-3xl p-10 shadow-lg">
+            <h2 className="text-6xl">
+              {timeLeft.dias}
+            </h2>
 
-      </section>
+            <p className="uppercase tracking-[0.2em] text-sm mt-4 text-[#b89b72]">
+              Días
+            </p>
+          </div>
 
-      {/* INFO */}
-      <section
-        id="info"
-        className="max-w-6xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-10 fade-up"
-      >
+          <div className="bg-white rounded-3xl p-10 shadow-lg">
+            <h2 className="text-6xl">
+              {timeLeft.horas}
+            </h2>
 
-        {/* CEREMONIA */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500 fade-up fade-delay-1">
+            <p className="uppercase tracking-[0.2em] text-sm mt-4 text-[#b89b72]">
+              Horas
+            </p>
+          </div>
 
-          <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
-            Ceremonia
-          </p>
+          <div className="bg-white rounded-3xl p-10 shadow-lg">
+            <h2 className="text-6xl">
+              {timeLeft.minutos}
+            </h2>
 
-          <h2 className="text-4xl mb-6">
-            Capilla del Dulce Nombre de Jesús
-          </h2>
+            <p className="uppercase tracking-[0.2em] text-sm mt-4 text-[#b89b72]">
+              Minutos
+            </p>
+          </div>
 
-          <p className="text-lg leading-8 text-[#5b6b76]">
-            Sevilla
-            <br />
-            12:00 horas
-          </p>
-          <a
-            href="https://maps.google.com/?q=Capilla+del+Dulce+Nombre+de+Jesús+Sevilla"
-            target="_blank"
-            className="inline-block mt-6 text-sm uppercase tracking-[0.2em] text-[#b89b72] hover:opacity-70 transition"
-          >
-            Ver ubicación
-          </a>
+          <div className="bg-white rounded-3xl p-10 shadow-lg">
+            <h2 className="text-6xl">
+              {timeLeft.segundos}
+            </h2>
 
-        </div>
-
-        {/* CELEBRACIÓN */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500 fade-up fade-delay-2">
-
-          <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
-            Celebración
-          </p>
-
-          <h2 className="text-4xl mb-6">
-            Hacienda Al-Yamanah
-          </h2>
-
-          <p className="text-lg leading-8 text-[#5b6b76]">
-            Sanlúcar la Mayor
-          </p>
-          <a
-            href="https://maps.google.com/?q=Hacienda+Al-Yamanah+Sanlúcar+la+Mayor"
-            target="_blank"
-            className="inline-block mt-6 text-sm uppercase tracking-[0.2em] text-[#b89b72] hover:opacity-70 transition"
-          >
-            Ver ubicación
-          </a>
-
-        </div>
-
-        {/* AUTOBUSES */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10 md:col-span-2 hover:-translate-y-1 transition duration-500 fade-up fade-delay-3">
-
-          <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-8">
-            Autobuses
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8">
-
-            <div className="border border-[#ece7df] rounded-2xl p-6">
-
-              <h3 className="text-2xl mb-4">
-                Olivares
-              </h3>
-
-              <p className="text-[#5b6b76] leading-8">
-                Salida desde el recinto ferial de Olivares
-                <br />
-                10:30 horas
-              </p>
-
-            </div>
-
-            <div className="border border-[#ece7df] rounded-2xl p-6">
-
-              <h3 className="text-2xl mb-4">
-                Sevilla
-              </h3>
-
-              <p className="text-[#5b6b76] leading-8">
-                Salida al término de la ceremonia
-                <br />
-                hacia Hacienda Al-Yamanah
-              </p>
-
-            </div>
-
-            <div className="border border-[#ece7df] rounded-2xl p-6">
-
-              <h3 className="text-2xl mb-4">
-                Regreso
-              </h3>
-
-              <p className="text-[#5b6b76] leading-8">
-                19:00 horas
-                <br />
-                Regreso a Sevilla y Olivares
-                <br /><br />
-                Nuevas salidas al finalizar la fiesta
-              </p>
-
-            </div>
-
+            <p className="uppercase tracking-[0.2em] text-sm mt-4 text-[#b89b72]">
+              Segundos
+            </p>
           </div>
 
         </div>
 
       </section>
-
-      {/* RSVP */}
-      <section className="bg-[#243746] text-white py-24 px-6">
-
-        <div className="max-w-3xl mx-auto text-center">
-
-          <p className="uppercase tracking-[0.4em] text-sm text-[#d6c1a3] mb-6">
-            Confirmación
-          </p>
-
-          <h2 className="text-5xl mb-12">
-            Nos encantará celebrar este día contigo
-          </h2>
-
-          <form
-            action="https://formsubmit.co/familiadevicentepena@gmail.com"
-            method="POST"
-            className="grid gap-6 text-left"
-          >
-
-            <input type="hidden" name="_captcha" value="false" />
-            <input type="hidden" name="_template" value="table" />
-
-            <input
-              type="text"
-              name="Nombre"
-              placeholder="Nombre y apellidos"
-              className="p-4 rounded-xl bg-white text-black"
-            />
-
-            <select
-              name="Asistencia"
-              className="p-4 rounded-xl text-black"
-            >
-              <option>¿Asistirás a la boda?</option>
-              <option>Sí asistiré</option>
-              <option>No podré asistir</option>
-            </select>
-
-            <select
-              name="Autobus"
-              className="p-4 rounded-xl text-black"
-            >
-              <option>¿Necesitarás autobús?</option>
-              <option>Sí</option>
-              <option>No</option>
-            </select>
-
-            <textarea
-              name="Mensaje"
-              placeholder="Alergias, intolerancias o mensaje"
-              rows={4}
-              className="p-4 rounded-xl text-black"
-            />
-
-            <button
-              className="bg-[#d6c1a3] text-[#243746] py-4 rounded-xl uppercase tracking-[0.2em] hover:opacity-80 transition"
-            >
-              Enviar confirmación
-            </button>
-
-          </form>
-
-        </div>
-
-      </section>
-
     </main>
   );
 }
