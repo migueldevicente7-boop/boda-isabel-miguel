@@ -59,7 +59,7 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-[url('/foto-boda.JPEG')] bg-cover bg-center" />
 
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />
 
         <div className="relative z-10 text-center px-6 text-white">
 
