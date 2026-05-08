@@ -70,7 +70,7 @@ export default function Home() {
         </div>
 
         {/* CELEBRACIÓN */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500">
+        <div className="bg-white rounded-[30px] shadow-xl p-10 hover:-translate-y-1 transition duration-500 fade-up fade-delay-2">
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
             Celebración
           </p>
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
 
         {/* AUTOBUSES */}
-        <div className="bg-white rounded-[30px] shadow-xl p-10 md:col-span-2 hover:-translate-y-1 transition duration-500">
+        <div className="bg-white rounded-[30px] shadow-xl p-10 md:col-span-2 hover:-translate-y-1 transition duration-500 fade-up fade-delay-3">
 
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-8">
             Autobuses
