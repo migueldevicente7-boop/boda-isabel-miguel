@@ -21,6 +21,7 @@ export default function Home() {
       const distance = weddingDate.getTime() - now;
 
       const dias = Math.floor(distance / (1000 * 60 * 60 * 24));
+
       const horas = Math.floor(
         (distance % (1000 * 60 * 60 * 24)) /
         (1000 * 60 * 60)
@@ -102,7 +103,7 @@ export default function Home() {
 
         <div className="w-24 h-px bg-[#d6c1a3] mx-auto mb-10" />
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto px-6">
 
           <div className="bg-white rounded-3xl p-10 shadow-lg">
             <h2 className="text-6xl">
@@ -147,6 +148,185 @@ export default function Home() {
         </div>
 
       </section>
+
+      {/* INFORMACIÓN */}
+      <section
+        id="info"
+        className="max-w-6xl mx-auto px-6 py-28"
+      >
+
+        <div className="text-center mb-20">
+
+          <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
+            Nuestra boda
+          </p>
+
+          <h2 className="text-5xl mb-8">
+            Celebremos juntos un día inolvidable
+          </h2>
+
+          <div className="w-24 h-px bg-[#d6c1a3] mx-auto mb-10" />
+
+          <p className="max-w-2xl mx-auto text-xl leading-10 text-[#5b6b76]">
+            Después de tantos momentos compartidos,
+            llega uno de los días más importantes de nuestras vidas.
+            Nos haría muchísima ilusión celebrar este día rodeados de nuestra familia y amigos.
+          </p>
+
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-10">
+
+          {/* CEREMONIA */}
+          <div className="bg-white rounded-[40px] p-12 shadow-xl">
+
+            <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
+              Ceremonia
+            </p>
+
+            <h3 className="text-4xl mb-4">
+              Capilla del Dulce Nombre de Jesús
+            </h3>
+
+            <p className="text-[#b89b72] mb-8">
+              Sevilla
+            </p>
+
+            <a
+              href="https://maps.google.com/?q=Capilla+del+Dulce+Nombre+de+Jesús+Sevilla"
+              target="_blank"
+              className="inline-block mb-10 px-6 py-3 border border-[#d6c1a3] rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#243746] hover:text-white transition duration-500"
+            >
+              Cómo llegar
+            </a>
+
+            <div className="space-y-4 text-lg text-[#5b6b76] leading-9">
+
+              <p>
+                Sevilla
+              </p>
+
+              <p>
+                26 de septiembre de 2026
+              </p>
+
+              <p>
+                12:00 horas
+              </p>
+
+            </div>
+
+          </div>
+
+          {/* CELEBRACIÓN */}
+          <div className="bg-white rounded-[40px] p-12 shadow-xl">
+
+            <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
+              Celebración
+            </p>
+
+            <h3 className="text-4xl mb-4">
+              Hacienda Al-Yamanah
+            </h3>
+
+            <p className="text-[#b89b72] mb-8">
+              Sanlúcar la Mayor
+            </p>
+
+            <a
+              href="https://maps.google.com/?q=Hacienda+Al-Yamanah+Sanlúcar+la+Mayor"
+              target="_blank"
+              className="inline-block mb-10 px-6 py-3 border border-[#d6c1a3] rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#243746] hover:text-white transition duration-500"
+            >
+              Cómo llegar
+            </a>
+            <div className="space-y-4 text-lg text-[#5b6b76] leading-9">
+
+              <p>
+                Sanlúcar la Mayor
+              </p>
+
+              <p>
+                Cóctel, cena y fiesta
+              </p>
+
+              <p>
+                Una noche inolvidable
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* AUTOBUSES */}
+        <div className="mt-16 bg-white rounded-[40px] p-12 shadow-xl">
+
+          <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
+            Transporte
+          </p>
+
+          <h3 className="text-4xl mb-10">
+            Horarios de autobuses
+          </h3>
+
+          <div className="space-y-8 text-lg leading-9 text-[#5b6b76]">
+
+            <div>
+              <p className="font-semibold text-[#243746]">
+                Ida a la ceremonia
+              </p>
+
+              <p>
+                Salida desde el recinto ferial de Olivares — 10:30 horas
+              </p>
+            </div>
+
+            <div>
+              <p className="font-semibold text-[#243746]">
+                Vuelta intermedia
+              </p>
+
+              <p>
+                Autobús hacia Sevilla — 19:00 horas
+              </p>
+
+              <p>
+                Autobús hacia Olivares — 19:00 horas
+              </p>
+            </div>
+
+            <div>
+              <p className="font-semibold text-[#243746]">
+                Vuelta final
+              </p>
+
+              <p>
+                Ambos autobuses saldrán nuevamente al finalizar la fiesta
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        {/* CONFIRMAR */}
+        <div className="text-center mt-20">
+
+          <a
+            href="https://forms.gle/"
+            target="_blank"
+            className="inline-block px-12 py-5 bg-[#243746] text-white uppercase tracking-[0.3em] text-sm rounded-full hover:scale-105 transition duration-500 shadow-xl"
+          >
+            Confirmar asistencia
+          </a>
+
+        </div>
+
+      </section>
+
     </main>
   );
 }
