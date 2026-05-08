@@ -51,6 +51,7 @@ export default function Home() {
   }, []);
 
   return (
+
     <main className="bg-[#f6f1eb] text-[#243746] animate-fadeIn">
 
       {/* HERO */}
@@ -66,7 +67,7 @@ export default function Home() {
             Una celebración inolvidable
           </p>
 
-          <h1 className="text-7xl md:text-9xl leading-none">
+          <h1 className="text-7xl md:text-9xl leading-none font-serif">
             Isabel
           </h1>
 
@@ -74,7 +75,7 @@ export default function Home() {
             y
           </p>
 
-          <h1 className="text-7xl md:text-9xl leading-none">
+          <h1 className="text-7xl md:text-9xl leading-none font-serif">
             Miguel
           </h1>
 
@@ -85,13 +86,14 @@ export default function Home() {
           </div>
 
           <a
-            href="#info"
+            href="#rsvp"
             className="inline-block mt-12 px-8 py-4 border border-[#f6f1eb] text-[#f6f1eb] uppercase tracking-[0.2em] text-sm hover:bg-[#f6f1eb] hover:text-[#243746] transition duration-500"
           >
             Confirmar asistencia
           </a>
 
         </div>
+
       </section>
 
       {/* CONTADOR */}
@@ -106,7 +108,7 @@ export default function Home() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto px-6">
 
           <div className="bg-white rounded-3xl p-10 shadow-lg">
-            <h2 className="text-6xl">
+            <h2 className="text-6xl font-serif">
               {timeLeft.dias}
             </h2>
 
@@ -116,7 +118,7 @@ export default function Home() {
           </div>
 
           <div className="bg-white rounded-3xl p-10 shadow-lg">
-            <h2 className="text-6xl">
+            <h2 className="text-6xl font-serif">
               {timeLeft.horas}
             </h2>
 
@@ -126,7 +128,7 @@ export default function Home() {
           </div>
 
           <div className="bg-white rounded-3xl p-10 shadow-lg">
-            <h2 className="text-6xl">
+            <h2 className="text-6xl font-serif">
               {timeLeft.minutos}
             </h2>
 
@@ -136,7 +138,7 @@ export default function Home() {
           </div>
 
           <div className="bg-white rounded-3xl p-10 shadow-lg">
-            <h2 className="text-6xl">
+            <h2 className="text-6xl font-serif">
               {timeLeft.segundos}
             </h2>
 
@@ -149,11 +151,8 @@ export default function Home() {
 
       </section>
 
-      {/* INFORMACIÓN */}
-      <section
-        id="info"
-        className="max-w-6xl mx-auto px-6 py-28"
-      >
+      {/* INFO */}
+      <section className="max-w-6xl mx-auto px-6 py-28">
 
         <div className="text-center mb-20">
 
@@ -161,7 +160,7 @@ export default function Home() {
             Nuestra boda
           </p>
 
-          <h2 className="text-5xl mb-8">
+          <h2 className="text-5xl mb-8 font-serif">
             Celebremos juntos un día inolvidable
           </h2>
 
@@ -184,7 +183,7 @@ export default function Home() {
               Ceremonia
             </p>
 
-            <h3 className="text-4xl mb-4">
+            <h3 className="text-4xl mb-4 font-serif">
               Capilla del Dulce Nombre de Jesús
             </h3>
 
@@ -203,10 +202,6 @@ export default function Home() {
             <div className="space-y-4 text-lg text-[#5b6b76] leading-9">
 
               <p>
-                Sevilla
-              </p>
-
-              <p>
                 26 de septiembre de 2026
               </p>
 
@@ -218,14 +213,14 @@ export default function Home() {
 
           </div>
 
-          {/* CELEBRACIÓN */}
+          {/* CONVITE */}
           <div className="bg-white rounded-[40px] p-12 shadow-xl">
 
             <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
               Celebración
             </p>
 
-            <h3 className="text-4xl mb-4">
+            <h3 className="text-4xl mb-4 font-serif">
               Hacienda Al-Yamanah
             </h3>
 
@@ -240,14 +235,11 @@ export default function Home() {
             >
               Cómo llegar
             </a>
+
             <div className="space-y-4 text-lg text-[#5b6b76] leading-9">
 
               <p>
-                Sanlúcar la Mayor
-              </p>
-
-              <p>
-                Cóctel, cena y fiesta
+                Posterior convite y celebración
               </p>
 
               <p>
@@ -267,11 +259,11 @@ export default function Home() {
             Transporte
           </p>
 
-          <h3 className="text-4xl mb-10">
+          <h3 className="text-4xl mb-10 font-serif">
             Horarios de autobuses
           </h3>
 
-          <div className="space-y-8 text-lg leading-9 text-[#5b6b76]">
+          <div className="space-y-10 text-lg leading-9 text-[#5b6b76]">
 
             <div>
               <p className="font-semibold text-[#243746]">
@@ -303,7 +295,15 @@ export default function Home() {
               </p>
 
               <p>
-                Ambos autobuses saldrán nuevamente al finalizar la fiesta
+                Ambos autobuses volverán a salir al finalizar la fiesta:
+              </p>
+
+              <p>
+                • Dirección Sevilla
+              </p>
+
+              <p>
+                • Dirección Olivares
               </p>
 
             </div>
@@ -312,93 +312,101 @@ export default function Home() {
 
         </div>
 
-      {/* RSVP */}
-      <section className="mt-20 bg-[#243746] rounded-[40px] p-12 text-white shadow-2xl">
-
-        <div className="text-center mb-12">
-
-          <p className="uppercase tracking-[0.3em] text-sm text-[#d6c1a3] mb-4">
-            Confirmación
-          </p>
-
-          <h2 className="text-5xl mb-6">
-            Nos encantará celebrar este día contigo
-          </h2>
-
-          <div className="w-24 h-px bg-[#d6c1a3] mx-auto" />
-
-        </div>
-
-        <form
-          action="https://formsubmit.co/TUEMAIL@gmail.com"
-          method="POST"
-          className="grid gap-6 max-w-3xl mx-auto"
+        {/* RSVP */}
+        <section
+          id="rsvp"
+          className="mt-20 bg-[#243746] rounded-[40px] p-12 text-white shadow-2xl"
         >
 
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
+          <div className="text-center mb-12">
 
-          <input
-            type="text"
-            name="Nombre"
-            placeholder="Nombre y apellidos"
-            required
-            className="p-5 rounded-2xl text-black border-0 outline-none"
-          />
+            <p className="uppercase tracking-[0.3em] text-sm text-[#d6c1a3] mb-4">
+              Confirmación
+            </p>
 
-          <select
-            name="Asistencia"
-            required
-            className="p-5 rounded-2xl text-black"
+            <h2 className="text-5xl mb-6 font-serif">
+              Nos encantará celebrar este día contigo
+            </h2>
+
+            <div className="w-24 h-px bg-[#d6c1a3] mx-auto" />
+
+          </div>
+
+          <form
+            action="https://formsubmit.co/familiadevicentepena@gmail.com"
+            method="POST"
+            className="grid gap-6 max-w-3xl mx-auto"
           >
-            <option value="">
-              ¿Asistirás a la boda?
-            </option>
 
-            <option>
-              Sí asistiré
-            </option>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
 
-            <option>
-              No podré asistir
-            </option>
-          </select>
+            <input
+              type="text"
+              name="Nombre"
+              placeholder="Nombre y apellidos"
+              required
+              className="p-5 rounded-2xl text-black"
+            />
 
-          <select
-            name="Autobus"
-            required
-            className="p-5 rounded-2xl text-black"
-          >
-            <option value="">
-              ¿Necesitarás autobús?
-            </option>
+            <select
+              name="Asistencia"
+              required
+              className="p-5 rounded-2xl text-black"
+            >
+              <option value="">
+                ¿Asistirás a la boda?
+              </option>
 
-            <option>
-              Sí
-            </option>
+              <option>
+                Sí asistiré
+              </option>
 
-            <option>
-              No
-            </option>
-          </select>
+              <option>
+                No podré asistir
+              </option>
+            </select>
 
-          <textarea
-            name="Mensaje"
-            placeholder="Alergias, intolerancias o mensaje"
-            rows={5}
-            className="p-5 rounded-2xl text-black"
-          />
+            <select
+              name="Autobus"
+              required
+              className="p-5 rounded-2xl text-black"
+            >
+              <option value="">
+                ¿Necesitarás autobús?
+              </option>
 
-          <button
-            type="submit"
-            className="bg-[#d6c1a3] text-[#243746] py-5 rounded-2xl uppercase tracking-[0.3em] text-sm hover:scale-[1.02] transition duration-500"
-          >
-            Enviar confirmación
-          </button>
+              <option>
+                Sí
+              </option>
 
-        </form>
+              <option>
+                No
+              </option>
+            </select>
+
+            <textarea
+              name="Mensaje"
+              placeholder="Alergias, intolerancias o mensaje"
+              rows={5}
+              className="p-5 rounded-2xl text-black"
+            />
+
+            <button
+              type="submit"
+              className="bg-[#d6c1a3] text-[#243746] py-5 rounded-2xl uppercase tracking-[0.3em] text-sm hover:scale-[1.02] transition duration-500"
+            >
+              Enviar confirmación
+            </button>
+
+          </form>
+
+        </section>
 
       </section>
+
     </main>
+
   );
+
 }
