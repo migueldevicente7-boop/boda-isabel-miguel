@@ -343,7 +343,7 @@ export default function Home() {
           </div>
 
           <form
-            action="https://formsubmit.co/familiadevicentepena@gmail.com"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSdSCIp845KD9xWAxBCLCj04RpEazcaSJ_QRUeye4YAq0_wg9Q/formResponse"
             method="POST"
             className="grid gap-6 max-w-3xl mx-auto"
           >
