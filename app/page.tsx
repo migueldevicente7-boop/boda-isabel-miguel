@@ -84,6 +84,13 @@ export default function Home() {
             <br />
             12:00 horas
           </p>
+          <a
+            href="https://maps.google.com/?q=Capilla+del+Dulce+Nombre+de+Jesús+Sevilla"
+            target="_blank"
+            className="inline-block mt-6 text-sm uppercase tracking-[0.2em] text-[#b89b72] hover:opacity-70 transition"
+          >
+            Ver ubicación
+          </a>
 
         </div>
 
@@ -101,6 +108,13 @@ export default function Home() {
           <p className="text-lg leading-8 text-[#5b6b76]">
             Sanlúcar la Mayor
           </p>
+          <a
+            href="https://maps.google.com/?q=Hacienda+Al-Yamanah+Sanlúcar+la+Mayor"
+            target="_blank"
+            className="inline-block mt-6 text-sm uppercase tracking-[0.2em] text-[#b89b72] hover:opacity-70 transition"
+          >
+            Ver ubicación
+          </a>
 
         </div>
 
