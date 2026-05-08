@@ -312,21 +312,93 @@ export default function Home() {
 
         </div>
 
-        {/* CONFIRMAR */}
-        <div className="text-center mt-20">
+      {/* RSVP */}
+      <section className="mt-20 bg-[#243746] rounded-[40px] p-12 text-white shadow-2xl">
 
-          <a
-            href="https://forms.gle/"
-            target="_blank"
-            className="inline-block px-12 py-5 bg-[#243746] text-white uppercase tracking-[0.3em] text-sm rounded-full hover:scale-105 transition duration-500 shadow-xl"
-          >
-            Confirmar asistencia
-          </a>
+        <div className="text-center mb-12">
+
+          <p className="uppercase tracking-[0.3em] text-sm text-[#d6c1a3] mb-4">
+            Confirmación
+          </p>
+
+          <h2 className="text-5xl mb-6">
+            Nos encantará celebrar este día contigo
+          </h2>
+
+          <div className="w-24 h-px bg-[#d6c1a3] mx-auto" />
 
         </div>
 
-      </section>
+        <form
+          action="https://formsubmit.co/TUEMAIL@gmail.com"
+          method="POST"
+          className="grid gap-6 max-w-3xl mx-auto"
+        >
 
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+
+          <input
+            type="text"
+            name="Nombre"
+            placeholder="Nombre y apellidos"
+            required
+            className="p-5 rounded-2xl text-black border-0 outline-none"
+          />
+
+          <select
+            name="Asistencia"
+            required
+            className="p-5 rounded-2xl text-black"
+          >
+            <option value="">
+              ¿Asistirás a la boda?
+            </option>
+
+            <option>
+              Sí asistiré
+            </option>
+
+            <option>
+              No podré asistir
+            </option>
+          </select>
+
+          <select
+            name="Autobus"
+            required
+            className="p-5 rounded-2xl text-black"
+          >
+            <option value="">
+              ¿Necesitarás autobús?
+            </option>
+
+            <option>
+              Sí
+            </option>
+
+            <option>
+              No
+            </option>
+          </select>
+
+          <textarea
+            name="Mensaje"
+            placeholder="Alergias, intolerancias o mensaje"
+            rows={5}
+            className="p-5 rounded-2xl text-black"
+          />
+
+          <button
+            type="submit"
+            className="bg-[#d6c1a3] text-[#243746] py-5 rounded-2xl uppercase tracking-[0.3em] text-sm hover:scale-[1.02] transition duration-500"
+          >
+            Enviar confirmación
+          </button>
+
+        </form>
+
+      </section>
     </main>
   );
 }
