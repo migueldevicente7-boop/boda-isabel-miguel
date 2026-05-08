@@ -67,7 +67,7 @@ export default function Home() {
             Una celebración inolvidable
           </p>
 
-          <h1 className="text-7xl md:text-9xl leading-none font-serif">
+          <h1 className="text-5xl sm:text-6xl md:text-9xl leading-none font-serif">
             Isabel
           </h1>
 
@@ -75,7 +75,7 @@ export default function Home() {
             y
           </p>
 
-          <h1 className="text-7xl md:text-9xl leading-none font-serif">
+          <h1 className="text-5xl sm:text-6xl md:text-9xl leading-none font-serif">
             Miguel
           </h1>
 
