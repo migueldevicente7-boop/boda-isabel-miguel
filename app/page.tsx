@@ -169,7 +169,7 @@ export default function Home() {
           <p className="max-w-2xl mx-auto text-xl leading-10 text-[#5b6b76]">
             Después de tantos momentos compartidos,
             llega uno de los días más importantes de nuestras vidas.
-            Nos haría muchísima ilusión celebrar este día rodeados de nuestra familia y amigos.
+            Nos haría muchísima ilusión celebrar este día con vosotros.
           </p>
 
         </div>
@@ -239,11 +239,11 @@ export default function Home() {
             <div className="space-y-4 text-lg text-[#5b6b76] leading-9">
 
               <p>
-                Posterior convite y celebración
+                Posterior convite y celebración.
               </p>
 
               <p>
-                Una noche inolvidable
+                Un día inolvidable.
               </p>
 
             </div>
