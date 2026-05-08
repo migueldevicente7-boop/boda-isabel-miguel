@@ -274,6 +274,16 @@ export default function Home() {
                 Salida desde el recinto ferial de Olivares — 10:30 horas
               </p>
             </div>
+            
+            <div>
+              <p className="font-semibold text-[#243746]">
+                Ida al convite
+              </p>
+
+              <p>
+                Salida de dos autobuses tras la ceremonia con destino Hacienda Al-Yamanah
+              </p>
+            </div>
 
             <div>
               <p className="font-semibold text-[#243746]">
