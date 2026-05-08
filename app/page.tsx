@@ -152,7 +152,7 @@ export default function Home() {
       </section>
 
       {/* INFO */}
-      <section className="max-w-6xl mx-auto px-5 md:px-6 py-20 md:py-28">
+      <section className="max-w-6xl mx-auto px-5 md:px-6 py-20 md:py-32">
 
         <div className="text-center mb-20">
 
