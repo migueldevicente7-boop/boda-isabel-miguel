@@ -107,7 +107,7 @@ export default function Home() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto px-6">
 
-          <div className="bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
+          <div className="fade-up bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
             <h2 className="text-6xl font-serif">
               {timeLeft.dias}
             </h2>
@@ -117,7 +117,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
+          <div className="fade-up bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
             <h2 className="text-6xl font-serif">
               {timeLeft.horas}
             </h2>
@@ -127,7 +127,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
+          <div className="fade-up bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
             <h2 className="text-6xl font-serif">
               {timeLeft.minutos}
             </h2>
@@ -137,7 +137,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
+          <div className="fade-up bg-white rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500">
             <h2 className="text-6xl font-serif">
               {timeLeft.segundos}
             </h2>
@@ -177,7 +177,7 @@ export default function Home() {
         <div className="grid md:grid-cols-2 gap-6 md:gap-10">
 
           {/* CEREMONIA */}
-          <div className="bg-white rounded-[40px] p-12 shadow-xl">
+          <div className="fade-up bg-white rounded-[40px] p-12 shadow-xl">
 
             <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
               Ceremonia
@@ -214,7 +214,7 @@ export default function Home() {
           </div>
 
           {/* CONVITE */}
-          <div className="bg-white rounded-[40px] p-12 shadow-xl">
+          <div className="fade-up bg-white rounded-[40px] p-12 shadow-xl">
 
             <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
               Celebración
@@ -253,7 +253,7 @@ export default function Home() {
         </div>
 
         {/* AUTOBUSES */}
-        <div className="mt-16 bg-white rounded-[40px] p-12 shadow-xl">
+        <div className="fade-up mt-16 bg-white rounded-[40px] p-12 shadow-xl">
 
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
             Transporte
