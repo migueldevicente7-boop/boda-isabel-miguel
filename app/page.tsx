@@ -165,12 +165,12 @@ export default function Home() {
             ref={(el) => {
               sectionsRef.current[0] = el;
             }}
-            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
-            <h2 className="text-6xl font-serif">
+            className="fade-scroll bg-white/60 backdrop-blur-md border border-white/40 rounded-[40px] py-12 px-6 shadow-2xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
+            <h2 className="text-7xl md:text-8xl font-serif tracking-tight text-[#243746]">
               {timeLeft.dias}
             </h2>
 
-            <p className="uppercase tracking-[0.2em] text-sm mt-4 text-[#b89b72]">
+            <p className="uppercase tracking-[0.35em] text-xs mt-5 text-[#8b9b72]">
               Días
             </p>
           </div>
@@ -179,12 +179,12 @@ export default function Home() {
             ref={(el) => {
               sectionsRef.current[1] = el;
             }}
-            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
-            <h2 className="text-6xl font-serif">
+            className="fade-scroll bg-white/60 backdrop-blur-md border border-white/40 rounded-[40px] py-12 px-6 shadow-2xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
+            <h2 className="text-7xl md:text-8xl font-serif tracking-tight text-[#243746]">
               {timeLeft.horas}
             </h2>
 
-            <p className="uppercase tracking-[0.2em] text-sm mt-4 text-[#b89b72]">
+            <p className="uppercase tracking-[0.35em] text-xs mt-5 text-[#8b9b72]">
               Horas
             </p>
           </div>
@@ -193,12 +193,12 @@ export default function Home() {
             ref={(el) => {
               sectionsRef.current[2] = el;
             }}
-            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
-            <h2 className="text-6xl font-serif">
+            className="fade-scroll bg-white/60 backdrop-blur-md border border-white/40 rounded-[40px] py-12 px-6 shadow-2xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
+            <h2 className="text-7xl md:text-8xl font-serif tracking-tight text-[#243746]">
               {timeLeft.minutos}
             </h2>
 
-            <p className="uppercase tracking-[0.2em] text-sm mt-4 text-[#b89b72]">
+            <p className="uppercase tracking-[0.35em] text-xs mt-5 text-[#8b9b72]">
               Minutos
             </p>
           </div>
@@ -207,12 +207,12 @@ export default function Home() {
             ref={(el) => {
               sectionsRef.current[3] = el;
             }}
-            className="fade-scroll bg-white/80 backdrop-blur-sm rounded-[32px] p-10 shadow-xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
-            <h2 className="text-6xl font-serif">
+            className="fade-scroll bg-white/60 backdrop-blur-md border border-white/40 rounded-[40px] py-12 px-6 shadow-2xl hover:-translate-y-1 transition duration-500 hover:scale-[1.03] active:scale-[0.98]">
+            <h2 className="text-7xl md:text-8xl font-serif tracking-tight text-[#243746]">
               {timeLeft.segundos}
             </h2>
 
-            <p className="uppercase tracking-[0.2em] text-sm mt-4 text-[#b89b72]">
+            <p className="uppercase tracking-[0.35em] text-xs mt-5 text-[#8b9b72]">
               Segundos
             </p>
           </div>
