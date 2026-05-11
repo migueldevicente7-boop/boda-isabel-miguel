@@ -404,6 +404,35 @@ export default function Home() {
 
         </div>
 
+<div className="fade-scroll mt-16 bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl text-center">
+
+  <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
+    Regalos
+  </p>
+
+  <h2 className="text-4xl font-serif text-[#243746] mb-8">
+    Un pequeño empujón para nuestra nueva aventura
+  </h2>
+
+  <p className="max-w-2xl mx-auto text-lg leading-9 text-[#5b6b76] mb-10">
+    Vuestra presencia en nuestra boda será, sin duda,
+    el mejor regalo.
+    <br /><br />
+    Pero si además queréis ayudarnos en esta nueva etapa,
+    os dejamos nuestra cuenta bancaria.
+    <br /><br />
+    Aunque somos bastante tradicionales…
+    y el efectivo siempre nos ha parecido una maravilla 😊
+  </p>
+
+  <div className="inline-block bg-[#f6f1eb] rounded-full px-8 py-5 shadow-md">
+    <p className="tracking-[0.15em] text-[#243746] text-lg md:text-xl">
+      ES74 1465 0100 9117 6512 4188
+    </p>
+  </div>
+
+</div>
+        
         {/* RSVP */}
         
         {!submitted && (
