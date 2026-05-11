@@ -455,9 +455,9 @@ export default function Home() {
     y el efectivo siempre nos ha parecido una maravilla 😊
   </p>
 
-  <div className="inline-flex flex-col items-center gap-5 bg-[#f6f1eb] rounded-[32px] px-10 py-7 shadow-md">
+  <div className="inline-flex flex-col items-center gap-5 bg-[#f6f1eb] rounded-[32px] px-6 md:px-10 py-7 shadow-md">
 
-  <p className="tracking-[0.38em] text-[#243746] text-lg md:text-xl font-medium">
+  <p className="text-[#243746] text-sm md:text-xl font-medium tracking-[0.18em] md:tracking-[0.38em] break-all">
     ES74&nbsp;&nbsp;1465&nbsp;&nbsp;0100&nbsp;&nbsp;9117&nbsp;&nbsp;6512&nbsp;&nbsp;4188
   </p>
 
