@@ -17,6 +17,8 @@ export default function Home() {
 
   const [submitted, setSubmitted] = useState(false);
 
+  const [copied, setCopied] = useState(false);
+
   useEffect(() => {
 
     const interval = setInterval(() => {
