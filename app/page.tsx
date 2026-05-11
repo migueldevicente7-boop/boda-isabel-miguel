@@ -519,7 +519,7 @@ export default function Home() {
       {submitted && (
         <section
           id="gracias"
-          className="min-h-screen flex items-center justify-center bg-[#f6f1eb] px-6 text-center"
+          className="fade-thanks min-h-screen flex items-center justify-center bg-[#f6f1eb] px-6 text-center"
         >
   <div className="max-w-2xl">
     <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-6">
