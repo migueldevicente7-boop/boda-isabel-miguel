@@ -513,10 +513,11 @@ export default function Home() {
         </section>
 
       </section>
-      <section
-  id="gracias"
-  className="hidden min-h-screen items-center justify-center bg-[#f6f1eb] px-6 text-center"
->
+      {submitted && (
+        <section
+          id="gracias"
+          className="min-h-screen flex items-center justify-center bg-[#f6f1eb] px-6 text-center"
+        >
   <div className="max-w-2xl">
     <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-6">
       Confirmación enviada
@@ -533,6 +534,7 @@ export default function Home() {
     </p>
   </div>
 </section>
+      )}
 <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden">
   <div className="flex items-center gap-2 bg-white/80 backdrop-blur-xl border border-white/40 shadow-2xl rounded-full px-4 py-3">
 
