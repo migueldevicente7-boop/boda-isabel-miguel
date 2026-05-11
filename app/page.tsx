@@ -430,11 +430,22 @@ export default function Home() {
     y el efectivo siempre nos ha parecido una maravilla 😊
   </p>
 
-  <div className="inline-flex flex-col items-center gap-4 bg-[#f6f1eb] rounded-[32px] px-10 py-6 shadow-md">
-    <p className="tracking-[0.28em] text-[#243746] text-lg md:text-xl font-medium">
-      ES74 1465 0100 9117 6512 4188
-    </p>
-  </div>
+  <div className="inline-flex flex-col items-center gap-5 bg-[#f6f1eb] rounded-[32px] px-10 py-7 shadow-md">
+
+  <p className="tracking-[0.38em] text-[#243746] text-lg md:text-xl font-medium">
+    ES74&nbsp;&nbsp;1465&nbsp;&nbsp;0100&nbsp;&nbsp;9117&nbsp;&nbsp;6512&nbsp;&nbsp;4188
+  </p>
+
+  <button
+    onClick={() => {
+      navigator.clipboard.writeText("ES74 1465 0100 9117 6512 4188");
+    }}
+    className="bg-[#243746] text-white px-6 py-3 rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#1b2a38] transition duration-300"
+  >
+    Copiar IBAN
+  </button>
+
+</div>
 
 </div>
         
