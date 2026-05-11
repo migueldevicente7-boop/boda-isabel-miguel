@@ -15,6 +15,8 @@ export default function Home() {
     segundos: 0,
   });
 
+  const [submitted, setSubmitted] = useState(false);
+
   useEffect(() => {
 
     const interval = setInterval(() => {
