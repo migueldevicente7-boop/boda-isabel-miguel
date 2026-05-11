@@ -78,7 +78,10 @@ export default function Home() {
     <main className="bg-[#f6f1eb] text-[#243746] animate-fadeIn">
 
       {/* HERO */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section
+        id="inicio"
+        className="relative h-screen flex items-center justify-center overflow-hidden"
+      >
 
         <div className="absolute inset-0 bg-[url('/foto-boda.JPEG')] bg-cover bg-center" />
 
@@ -191,8 +194,10 @@ export default function Home() {
       </section>
 
       {/* INFO */}
-      <section className="max-w-6xl mx-auto px-5 md:px-6 py-20 md:py-32">
-
+      <section 
+        id="info"
+        className="max-w-6xl mx-auto px-5 md:px-6 py-20 md:py-32"
+      >
         <div className="text-center mb-20">
 
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
@@ -325,9 +330,11 @@ export default function Home() {
         <div 
           ref={(el) => {
               sectionsRef.current[6] = el;
-            }}
-            className="fade-scroll mt-16 bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl">
-
+          }}
+          id="transporte"
+          className="fade-scroll mt-16 bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl"
+        >
+          
           <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-5">
             Transporte
           </p>
@@ -490,7 +497,39 @@ export default function Home() {
         </section>
 
       </section>
+<div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden">
+  <div className="flex items-center gap-2 bg-white/80 backdrop-blur-xl border border-white/40 shadow-2xl rounded-full px-4 py-3">
 
+    <a
+      href="#inicio"
+      className="px-3 py-2 text-sm text-[#243746] font-medium"
+    >
+      Inicio
+    </a>
+
+    <a
+      href="#info"
+      className="px-3 py-2 text-sm text-[#243746] font-medium"
+    >
+      Info
+    </a>
+
+    <a
+      href="#transporte"
+      className="px-3 py-2 text-sm text-[#243746] font-medium"
+    >
+      Bus
+    </a>
+
+    <a
+      href="#rsvp"
+      className="px-3 py-2 text-sm bg-[#243746] text-white rounded-full"
+    >
+      RSVP
+    </a>
+
+  </div>
+</div>
     </main>
 
   );
