@@ -427,6 +427,7 @@ export default function Home() {
 
           </div>
 
+        {!submitted && (
           <form
             onSubmit={async (e) => {
               e.preventDefault();
@@ -509,6 +510,7 @@ export default function Home() {
             </button>
 
           </form>
+          )}
 
         </section>
 
