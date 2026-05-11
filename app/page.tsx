@@ -426,12 +426,21 @@ export default function Home() {
           </div>
 
           <form
-            action="https://docs.google.com/forms/d/e/1FAIpQLSdSCIp845KD9xWAxBCLCj04RpEazcaSJ_QRUeye4YAq0_wg9Q/formResponse"
-            method="POST"
-            onSubmit={() => {
-              setTimeout(() => {
-                window.location.href = "#gracias";
-              }, 500);
+            onSubmit={async (e) => {
+              e.preventDefault();
+
+              const form = e.target as HTMLFormElement;
+
+              await fetch(
+                "https://docs.google.com/forms/d/e/1FAIpQLSdSCIp845KD9xWAxBCLCj04RpEazcaSJ_QRUeye4YAq0_wg9Q/formResponse",
+                {
+                  method: "POST",
+                  body: new FormData(form),
+                  mode: "no-cors",
+                }
+              );
+
+              window.location.href = "#gracias";
             }}
             className="grid gap-6 max-w-3xl mx-auto"
           >
