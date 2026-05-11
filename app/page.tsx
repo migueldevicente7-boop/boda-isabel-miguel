@@ -497,6 +497,26 @@ export default function Home() {
         </section>
 
       </section>
+      <section
+  id="gracias"
+  className="hidden min-h-screen items-center justify-center bg-[#f6f1eb] px-6 text-center"
+>
+  <div className="max-w-2xl">
+    <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-6">
+      Confirmación enviada
+    </p>
+
+    <h2 className="text-5xl md:text-7xl font-serif text-[#243746] mb-8">
+      Gracias 💍
+    </h2>
+
+    <p className="text-xl leading-9 text-[#5b6b76]">
+      Hemos recibido vuestra confirmación correctamente.
+      <br />
+      Estamos deseando celebrar este día tan especial con vosotros.
+    </p>
+  </div>
+</section>
 <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 md:hidden">
   <div className="flex items-center gap-2 bg-white/80 backdrop-blur-xl border border-white/40 shadow-2xl rounded-full px-4 py-3">
 
