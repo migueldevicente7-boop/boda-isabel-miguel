@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
 
-  const sectionsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionsRef = useRef<(HTMLElement | null)[]>([]);
 
   const weddingDate = new Date("2026-09-26T12:00:00");
 
