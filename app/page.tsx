@@ -442,7 +442,7 @@ export default function Home() {
                 }
               );
 
-              window.location.href = "#gracias";
+              setSubmitted(true);
             }}
             className="grid gap-6 max-w-3xl mx-auto"
           >
