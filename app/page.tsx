@@ -80,6 +80,29 @@ export default function Home() {
   return (
 
     <main className="bg-[#f6f1eb] text-[#243746] animate-fadeIn">
+      <nav className="hidden md:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-white/20 backdrop-blur-md border border-white/20 shadow-xl rounded-full px-8 py-4 gap-8 text-sm uppercase tracking-[0.25em] text-white">
+
+    <a href="#inicio" className="hover:text-[#d6c1a3] transition duration-300">
+      Inicio
+    </a>
+
+    <a href="#info" className="hover:text-[#d6c1a3] transition duration-300">
+      Info
+    </a>
+
+    <a href="#transporte" className="hover:text-[#d6c1a3] transition duration-300">
+      Transporte
+    </a>
+
+    <a href="#regalos" className="hover:text-[#d6c1a3] transition duration-300">
+      Regalos
+    </a>
+
+    <a href="#rsvp" className="hover:text-[#d6c1a3] transition duration-300">
+      RSVP
+    </a>
+
+  </nav>
 
       {/* HERO */}
       <section
@@ -128,6 +151,7 @@ export default function Home() {
 
       {/* CONTADOR */}
       <section className="py-24 bg-[#fffdf9] border-y border-[#ece7df] text-center">
+        id="cuenta atrás"
 
         <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-6">
           Cuenta atrás
