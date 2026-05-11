@@ -90,3 +90,18 @@ h6 {
   opacity: 1;
   transform: translateY(0);
 }
+.fade-thanks {
+  animation: fadeThanks 1.2s ease forwards;
+}
+
+@keyframes fadeThanks {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
