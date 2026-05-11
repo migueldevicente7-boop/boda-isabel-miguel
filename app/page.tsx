@@ -241,6 +241,17 @@ export default function Home() {
             >
               Cómo llegar
             </a>
+            <div className="mt-8 overflow-hidden rounded-[24px] shadow-xl">
+              <iframe
+                src="https://www.google.com/maps?q=Capilla+del+Dulce+Nombre+de+Jesús+Sevilla&output=embed"
+                width="100%"
+                height="220"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
 
             <div className="space-y-4 text-lg text-[#5b6b76] leading-9">
 
@@ -282,6 +293,17 @@ export default function Home() {
             >
               Cómo llegar
             </a>
+            <div className="mt-8 overflow-hidden rounded-[24px] shadow-xl">
+              <iframe
+                src="https://www.google.com/maps?q=Hacienda+Al+Yamanah+Sanlucar+la+Mayor&output=embed"
+                width="100%"
+                height="220"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
 
             <div className="space-y-4 text-lg text-[#5b6b76] leading-9">
 
