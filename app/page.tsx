@@ -405,6 +405,7 @@ export default function Home() {
         </div>
 
         {/* RSVP */}
+        
         {!submitted && (
         <section
           ref={(el) => {
@@ -510,7 +511,6 @@ export default function Home() {
             </button>
 
           </form>
-          )}
 
         </section>
         )}
