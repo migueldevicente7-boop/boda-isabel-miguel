@@ -428,6 +428,11 @@ export default function Home() {
           <form
             action="https://docs.google.com/forms/d/e/1FAIpQLSdSCIp845KD9xWAxBCLCj04RpEazcaSJ_QRUeye4YAq0_wg9Q/formResponse"
             method="POST"
+            onSubmit={() => {
+              setTimeout(() => {
+                window.location.href = "#gracias";
+              }, 500);
+            }}
             className="grid gap-6 max-w-3xl mx-auto"
           >
 
