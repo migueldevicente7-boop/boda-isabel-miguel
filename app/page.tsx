@@ -430,8 +430,8 @@ export default function Home() {
     y el efectivo siempre nos ha parecido una maravilla 😊
   </p>
 
-  <div className="inline-block bg-[#f6f1eb] rounded-full px-8 py-5 shadow-md">
-    <p className="tracking-[0.15em] text-[#243746] text-lg md:text-xl">
+  <div className="inline-flex flex-col items-center gap-4 bg-[#f6f1eb] rounded-[32px] px-10 py-6 shadow-md">
+    <p className="tracking-[0.28em] text-[#243746] text-lg md:text-xl font-medium">
       ES74 1465 0100 9117 6512 4188
     </p>
   </div>
