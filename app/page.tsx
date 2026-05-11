@@ -440,23 +440,24 @@ export default function Home() {
 
   <button
     onClick={() => {
-  navigator.clipboard.writeText("ES74 1465 0100 9117 6512 4188");
+      navigator.clipboard.writeText("ES74 1465 0100 9117 6512 4188");
 
-  setCopied(true);
+      setCopied(true);
 
-  setTimeout(() => {
-    setCopied(false);
-  }, 2500);
-}}
-    {copied && (
-  <p className="text-[#8b9b72] text-sm tracking-[0.15em] uppercase fade-thanks">
-    IBAN copiado correctamente
-  </p>
-)}
+      setTimeout(() => {
+        setCopied(false);
+      }, 2500);
+    }}
     className="bg-[#243746] text-white px-6 py-3 rounded-full text-sm uppercase tracking-[0.2em] hover:bg-[#1b2a38] transition duration-300"
   >
     Copiar IBAN
   </button>
+
+  {copied && (
+    <p className="text-[#8b9b72] text-sm tracking-[0.15em] uppercase fade-thanks">
+      IBAN copiado correctamente
+    </p>
+  )}
 
 </div>
 
