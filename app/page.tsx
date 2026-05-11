@@ -80,25 +80,25 @@ export default function Home() {
   return (
 
     <main className="bg-[#f6f1eb] text-[#243746] animate-fadeIn">
-      <nav className="hidden md:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-white/20 backdrop-blur-md border border-white/20 shadow-xl rounded-full px-8 py-4 gap-8 text-sm uppercase tracking-[0.25em] text-white">
+      <nav className="hidden md:flex fixed top-6 left-1/2 -translate-x-1/2 z-50 bg-white/20 backdrop-blur-md border border-white/20 shadow-xl rounded-full px-8 py-4 gap-8 text-sm uppercase tracking-[0.25em] text-[#8b9b72]">
 
-    <a href="#inicio" className="hover:text-[#d6c1a3] transition duration-300">
+    <a href="#inicio" className="hover:text-[#74825d] transition duration-300">
       Inicio
     </a>
 
-    <a href="#info" className="hover:text-[#d6c1a3] transition duration-300">
+    <a href="#info" className="hover:text-[#74825d] transition duration-300">
       Info
     </a>
 
-    <a href="#transporte" className="hover:text-[#d6c1a3] transition duration-300">
+    <a href="#transporte" className="hover:text-[#74825d] transition duration-300">
       Transporte
     </a>
 
-    <a href="#regalos" className="hover:text-[#d6c1a3] transition duration-300">
+    <a href="#regalos" className="hover:text-[#74825d] transition duration-300">
       Regalos
     </a>
 
-    <a href="#rsvp" className="hover:text-[#d6c1a3] transition duration-300">
+    <a href="#rsvp" className="hover:text-[#74825d] transition duration-300">
       RSVP
     </a>
 
