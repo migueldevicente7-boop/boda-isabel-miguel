@@ -405,6 +405,7 @@ export default function Home() {
         </div>
 
         {/* RSVP */}
+        {!submitted && (
         <section
           ref={(el) => {
               sectionsRef.current[7] = el;
@@ -427,7 +428,6 @@ export default function Home() {
 
           </div>
 
-        {!submitted && (
           <form
             onSubmit={async (e) => {
               e.preventDefault();
@@ -513,6 +513,7 @@ export default function Home() {
           )}
 
         </section>
+        )}
 
       </section>
       {submitted && (
