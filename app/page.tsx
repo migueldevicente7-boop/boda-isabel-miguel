@@ -404,7 +404,7 @@ export default function Home() {
 
         </div>
 
-<div className="fade-scroll opacity-100 mt-16 bg-white rounded-[40px] p-12 shadow-xl text-center">
+<div className="mt-16 bg-white rounded-[40px] p-12 shadow-xl text-center">
 
   <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
     Regalos
