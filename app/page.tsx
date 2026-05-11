@@ -505,7 +505,7 @@ export default function Home() {
 
             <button
               type="submit"
-              className="rounded-full shadow-xl hover:scale-[1.02] transition duration-500 hover:scale-[1.03] active:scale-[0.98]"
+              className="w-full bg-[#8b9b72] text-white py-5 rounded-full uppercase tracking-[0.25em] text-sm shadow-xl hover:bg-[#74825d] hover:scale-[1.02] active:scale-[0.98] transition duration-500"
             >
               Enviar confirmación
             </button>
