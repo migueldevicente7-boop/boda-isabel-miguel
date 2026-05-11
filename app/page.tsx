@@ -151,7 +151,6 @@ export default function Home() {
 
       {/* CONTADOR */}
       <section className="py-24 bg-[#fffdf9] border-y border-[#ece7df] text-center">
-        id="cuenta atrás"
 
         <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-6">
           Cuenta atrás
