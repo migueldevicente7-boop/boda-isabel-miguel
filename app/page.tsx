@@ -404,7 +404,12 @@ export default function Home() {
 
         </div>
 
-<div className="mt-16 bg-white rounded-[40px] p-12 shadow-xl text-center">
+<div 
+  ref={(el) => {
+    sectionsRef.current[7] = el;
+  }}
+  className="fade-scroll mt-16 bg-white/80 backdrop-blur-sm rounded-[40px] p-12 shadow-xl text-center"
+>
 
   <p className="uppercase tracking-[0.3em] text-sm text-[#b89b72] mb-4">
     Regalos
@@ -438,7 +443,7 @@ export default function Home() {
         {!submitted && (
         <section
           ref={(el) => {
-              sectionsRef.current[7] = el;
+              sectionsRef.current[8] = el;
             }}
           id="rsvp"
           className="fade-scroll mt-20 bg-[#243746] rounded-[40px] p-12 text-white shadow-2xl"
